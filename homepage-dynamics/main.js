@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (logoutBtn) {
         logoutBtn.addEventListener("click", () => {
             localStorage.removeItem("loggedInUser");
-            window.location.href = "/DIGA3009/index.html";
+            window.location.href = "/DIGA3009A/index.html";
         });
     }
 
@@ -111,9 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const query = searchInput.value.trim();
             if (query.length > 0) {
                 localStorage.setItem("lastSearchQuery", query);
-                window.location.href = `search-results/forum-search.html?query=${encodeURIComponent(query)}`;
+                window.location.href = `/DIGA3009A/search-results/forum-search.html?query=${encodeURIComponent(query)}`;
             } else {
-                window.location.href = `search-results/forum-search.html`;
+                window.location.href = `/DIGA3009A/search-results/forum-search.html`;
             }
         });
     }
