@@ -1,0 +1,141 @@
+:root {
+    --greyish-blue: #323b60;
+    --light-grey: #b4b4b4;
+    --light-blue: #f3f5f9;
+    --soft-blue: #5ca3ff;
+    --light-magenta: #f9cce3;
+    --blue-grey: #cfd6dc;
+
+    --font-heading: 'Raleway', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-ui: 'Nunito Sans', sans-serif;
+}
+
+label,
+button,
+input {
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+.login-main {
+    padding: 1.5rem 5%;
+}
+
+h1,
+h2 {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-section {
+    background-color: var(--blue-grey);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.extra-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+input {
+    padding: 0.75rem;
+    border: 1px solid var(--light-grey);
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--soft-blue);
+    box-shadow: 0 0 0 2px rgba(92, 163, 255, 0.2);
+}
+
+.forgot-password {
+    font-size: 0.875rem;
+    color: var(--greyish-blue);
+}
+
+.forgot-password a,
+.login-section a {
+    color: var(--soft-blue);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.login-btn {
+    background-color: var(--soft-blue);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--font-ui);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: var(--light-magenta);
+    color: var(--greyish-blue);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+
+/* News Feed */
+.news-feed {
+    padding: 1.5rem;
+    background-color: var(--blue-grey);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.news-list {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+.news-list li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-news {
+    color: var(--soft-blue);
+}
+
+/*for desktop screens*/
+@media screen and (min-width: 768px) {
+    .news-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

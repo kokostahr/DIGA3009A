@@ -1,0 +1,73 @@
+:root {
+    --greyish-blue: #323b60;
+    --light-grey: #b4b4b4;
+    --light-blue: #f3f5f9;
+    --soft-blue: #5ca3ff;
+    --light-magenta: #f9cce3;
+    --blue-grey: #cfd6dc;
+
+    --font-heading: 'Raleway', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-ui: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: var(--light-blue);
+    font-family: var(--font-body);
+    padding: 2rem 5%;
+}
+
+.signup-success {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.signup-success h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--soft-blue);
+}
+
+.signup-success p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.signup-success a {
+    color: var(--soft-blue);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.user-wan,
+.user-too {
+    background-color: white;
+    border: 2px solid var(--soft-blue);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 90%;
+    font-size: 0.95rem;
+}
+
+.user-wan h2,
+.user-too h2 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--greyish-blue);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    font-family: var(--font-ui);
+    color: var(--greyish-blue);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Cabin Clue</title>
+    <meta name="author" content="Star Nkosi">
+    <meta name="description" content="The login page, for cabin clue!">
+
+    <!-- JAVA SCRIPT LINKING -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="../homepage-dynamics/main.js" defer></script>
+    <script src="profile-dynamics/login.js" defer></script>
+
+
+    <!--STYLES LINKKING-->
+    <link rel="stylesheet" href="../homepage-styles/main.css" />
+    <link rel="stylesheet" href="profile-styles/login.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header>
+        <div id="nav-container"></div>
+    </header>
+
+    <main class="login-main">
+        <section class="login-section">
+            <h1>Login</h1>
+            <p class="extra-text">Sign in to continue</p>
+            <p class="extra-text">Don't have an account? Click <a href="signup-page.html">HERE</a> to create one</p>
+
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+
+                <p class="forgot-password">
+                    Forgot your password? Click <a href="login-details.html"> HERE</a>
+                </p>
+
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+        </section>
+
+        <section class="news-feed">
+            <h2>Welcome back! Catch up on the latest news in your location</h2>
+
+            <ul class="news-list">
+                <li><i class="icon-news"></i> Flight delays in your area</li>
+                <li><i class="icon-news"></i> Crew tips trending this week</li>
+                <li><i class="icon-news"></i> Weather alerts for layovers</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div id="ftr-container"></div>
+    </footer>
+
+
+</body>
+
+</html>

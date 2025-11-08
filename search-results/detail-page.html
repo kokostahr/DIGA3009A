@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Detail | Cabin Clue</title>
+    <meta name="author" content="Star Nkosi">
+    <meta name="description" content="The search results and forum overview page, combined!">
+
+    <!-- JAVA SCRIPT LINKING -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="../homepage-dynamics/main.js" defer></script>
+    <script src="search-dynamics/detail-page.js" defer></script>
+
+
+    <!--STYLES LINKKING-->
+    <link rel="stylesheet" href="../homepage-styles/main.css" />
+    <link rel="stylesheet" href="search-styles/detail-page.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div id="nav-container"></div>
+        <div id="searchbar-cta"></div>
+    </header>
+
+    <main class="detail-main">
+        <section class="post-content" id="postContent">
+            <!--the stuff for the post will go here-->
+            <div class="vote-controls">
+                <i class="fas fa-arrow-up upvote"></i>
+                <i class="fas fa-arrow-down downvote"></i>
+            </div>
+
+
+        </section>
+
+        <section class="comment-section">
+            <h2>Comments</h2>
+            <div id="commentList" class="comment-list"></div>
+
+            <textarea id="commentInput" placeholder="Add your comment..."></textarea>
+            <button id="postCommentBtn">Post</button>
+        </section>
+
+        <section class="back-to-forum">
+            <button id="backToForumBtn">⤸ Back to Forum</button>
+        </section>
+
+        <section class="suggested-posts">
+            <h2>Suggested Posts</h2>
+            <div class="carousel-container" id="carouselContainer">
+                <!--the stuff may appear here, whenever its ready ig...-->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="ftr-container"></div>
+    </footer>
+
+
+</body>
+
+</html>

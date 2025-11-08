@@ -1,0 +1,173 @@
+:root {
+    --greyish-blue: #323b60;
+    --light-grey: #b4b4b4;
+    --light-blue: #f3f5f9;
+    --soft-blue: #5ca3ff;
+    --light-magenta: #f9cce3;
+    --blue-grey: #dfe3e8;
+    --grey-rain: #c1b8c8;
+    --lavender-grey: #e5e6eb;
+
+    --font-heading: 'Raleway', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-ui: 'Nunito Sans', sans-serif;
+}
+
+.detail-main {
+    padding: 1.5rem 5%;
+    background-color: var(--light-blue);
+    font-family: var(--font-body);
+}
+
+.post-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.vote-controls {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--greyish-blue);
+    display: flex;
+    gap: 1rem;
+}
+
+.upvote.clicked {
+    color: var(--soft-blue);
+}
+
+.downvote.clicked {
+    color: var(--light-magenta);
+}
+
+.profile-icon {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.save-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    color: var(--greyish-blue);
+    border: 0.15rem solid var(--soft-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+}
+
+.save-btn.saved {
+    background-color: var(--light-magenta);
+    color: var(--greyish-blue);
+    border-color: var(--light-magenta);
+    font-weight: bolder;
+}
+
+.comment-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.comment-box {
+    background-color: var(--lavender-grey);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.comment-list p {
+    background-color: var(--lavender-grey);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+#commentInput {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--light-grey);
+    margin-top: 1rem;
+    font-size: 1rem;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+#commentInput:focus {
+    height: 6rem;
+    outline: none;
+    border-color: var(--soft-blue);
+    box-shadow: 0 0 0 2px rgba(92, 163, 255, 0.2);
+}
+
+#postCommentBtn {
+    margin-top: 0.5rem;
+    background-color: var(--soft-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back-to-forum {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#backToForumBtn {
+    background-color: var(--soft-blue);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.suggested-posts {
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+.carousel-card {
+    min-width: 13.75rem;
+    background-color: var(--grey-rain);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}

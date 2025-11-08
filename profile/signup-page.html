@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Cabin Clue</title>
+    <meta name="author" content="Star Nkosi">
+    <meta name="description" content="The signup page, for cabin clue!">
+
+    <!-- JAVA SCRIPT LINKING -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="../homepage-dynamics/main.js" defer></script>
+    <script src="profile-dynamics/signup.js" defer></script>
+
+
+    <!--STYLES LINKKING-->
+    <link rel="stylesheet" href="../homepage-styles/main.css" />
+    <link rel="stylesheet" href="profile-styles/signup.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header>
+        <div id="nav-container"></div>
+    </header>
+
+    <main class="signup-main">
+        <section class="signup-section">
+            <h1>Create an Account</h1>
+            <p class="extra-text">
+                Already registered? Click <a href="login-page.html">HERE</a> to log in.
+            </p>
+
+            <form id="signupForm">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required />
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Password <span>(8 characters or more)</span></label>
+                <input type="password" id="password" name="password" required minlength="8" />
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+                <fieldset class="account-type">
+                    <legend>Account Type</legend>
+                    <label>
+                        <input type="radio" name="crewType" value="crew" required />
+                        I am a crew member
+                    </label>
+                    <label>
+                        <input type="radio" name="crewType" value="aspiring" />
+                        I am an aspiring crew member
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="signup-btn">Create Account</button>
+            </form>
+        </section>
+
+        <section class="signup-info">
+            <h2>Why Join Cabin Clue?</h2>
+            <ul class="benefits-list">
+                <li><i class="icon-benefit"></i> Share tips and routines</li>
+                <li><i class="icon-benefit"></i> Get location-based updates</li>
+                <li><i class="icon-benefit"></i> Connect with crew worldwide</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div id="ftr-container"></div>
+    </footer>
+
+</body>
+
+</html>

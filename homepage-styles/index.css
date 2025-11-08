@@ -1,0 +1,228 @@
+/* Adding a root so that I can easily call the colours in each webpage*/
+:root {
+    --greyish-blue: #323b60;
+    --light-grey: #b4b4b4;
+    --light-blue: #f3f5f9;
+    --soft-blue: #5ca3ff;
+    --light-magenta: #f9cce3;
+    --blue-grey: #cfd6dc;
+    --grey-rain: #c1b8c8;
+    --lavender-grey: #e5e6eb;
+
+    --font-heading: 'Raleway', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-ui: 'Nunito Sans', sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /*WHY WON'T IT STOP SCROLLING OMG!!*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+}
+
+.main-nav ul {
+    display: none;
+    /*mobile hidden*/
+}
+
+.login-btn {
+    background-color: var(--soft-blue);
+    color: white;
+    padding: 0.75rem 1.5rem;
+}
+
+/*search bar*/
+.search-section {
+    padding: 1rem 5%;
+}
+
+.search-section input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 0.0625rem solid var(--light-grey);
+    border-radius: 0.5rem;
+}
+
+/*hawt rn*/
+.hot-right-now,
+.hot-in-your-area {
+    padding: 1rem 5%;
+}
+
+.hot-cards,
+.area-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--blue-grey);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba (0, 0, 0, 0.05);
+    color: var(--greyish-blue);
+}
+
+.card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.card p {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.card small {
+    font-size: 0.85rem;
+    color: var(--greyish-blue);
+}
+
+/*carousel swipe swipe*/
+.carousel-section {
+    padding: 1rem 5%;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: hidden;
+    padding: 1rem 5%;
+}
+
+.carousel-scroll-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+
+    flex: 1;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+}
+
+.carousel-card {
+    min-width: 80%;
+    background-color: var(--blue-grey);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    scroll-snap-align: start;
+    font-family: var(--font-body);
+    color: var(--greyish-blue);
+}
+
+.carousel-btn {
+    align-self: center;
+    background-color: var(--grey-rain);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-ui);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.carousel-cta {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.join-btn,
+.submit-btn {
+
+    background-color: var(--soft-blue);
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+
+/*weather*/
+.weather-box h4 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather-box p {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.weather-box {
+    opacity: 1;
+    background: var(--grey-rain);
+    padding: 1rem;
+    margin: 1rem 5%;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.weather-box img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+}
+
+/*change the orientation on desktops*/
+@media screen and (min-width: 768px) {
+
+    .hot-container,
+    .carousel-section,
+    .weather-box {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .hot-cards,
+    .area-cards {
+        flex: 1;
+        gap: 2rem;
+    }
+
+    .carousel-container {
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .carousel-card {
+        min-width: 18.75rem;
+        max-width: 25rem;
+    }
+
+    .carousel-cta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 5%;
+        gap: 2rem;
+    }
+
+    .join-btn,
+    .submit-btn {
+        width: auto;
+        margin-top: 0;
+    }
+
+
+}

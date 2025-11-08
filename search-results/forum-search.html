@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum & Search | Cabin Clue</title>
+    <meta name="author" content="Star Nkosi">
+    <meta name="description" content="The search results and forum overview page, combined!">
+
+    <!-- JAVA SCRIPT LINKING -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="../homepage-dynamics/main.js" defer></script>
+    <script src="search-dynamics/forum-search.js" defer></script>
+
+
+    <!--STYLES LINKKING-->
+    <link rel="stylesheet" href="../homepage-styles/main.css" />
+    <link rel="stylesheet" href="search-styles/forum-search.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header>
+        <div id="nav-container"></div>
+    </header>
+
+    <main class="forum-main">
+        <section class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search tips, questions, cities..." />
+            <button id="filterToggleBtn">▶</button>
+        </section>
+
+        <section class="filter-menu" id="filterMenu">
+            <h3>Filter Options</h3>
+            <button id="closeFilterBtn">✕ Close</button>
+            <div class="filter-group">
+                <label><input type="checkbox" value="uniform" /> Uniform</label>
+                <label><input type="checkbox" value="safety" /> Safety</label>
+                <label><input type="checkbox" value="crew hacks" /> Crew Hacks</label>
+                <label><input type="checkbox" value="food" /> Food</label>
+            </div>
+
+            <div class="sort-group">
+                <label><input type="radio" name="sort" value="recent" /> Most Recent</label>
+                <label><input type="radio" name="sort" value="saved" /> Most Saved</label>
+                <label><input type="radio" name="sort" value="comments" /> Most Comments</label>
+            </div>
+
+            <div class="type-group">
+                <label><input type="checkbox" value="tips" /> Tips</label>
+                <label><input type="checkbox" value="questions" /> Questions</label>
+                <label><input type="checkbox" value="api" /> API Info</label>
+                <label><input type="checkbox" value="posts" /> Posts</label>
+            </div>
+            <button id="applyFiltersBtn" class="apply-btn">Apply Filters</button>
+        </section>
+
+        <section class="weather-preview" id="weatherPreview"></section>
+
+        <section class="results-section">
+            <h2>Top Results</h2>
+            <div id="resultsContainer" class="results-grid"></div>
+        </section>
+
+        <section class="submit-tip">
+            <p>Didn't find what you were looking for?</p>
+            <button class="submitBtn" id="submitTipBtn">Submit a Tip</button>
+        </section>
+    </main>
+
+    <footer>
+        <div id="ftr-container"></div>
+    </footer>
+
+
+
+</body>
+
+</html>

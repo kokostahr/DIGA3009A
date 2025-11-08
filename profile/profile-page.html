@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Cabin Clue</title>
+    <meta name="author" content="Star Nkosi">
+    <meta name="description" content="The login page, for cabin clue!">
+
+    <!-- JAVA SCRIPT LINKING -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="../homepage-dynamics/main.js" defer></script>
+    <script src="profile-dynamics/profile.js" defer></script>
+
+
+    <!--STYLES LINKKING-->
+    <link rel="stylesheet" href="../homepage-styles/main.css" />
+    <link rel="stylesheet" href="profile-styles/profile.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header>
+        <div id="nav-container"></div>
+        <div id="searchbar-cta"></div>
+    </header>
+
+    <main class="profile-main">
+        <section class="profile-header">
+            <h1 id="username">Username</h1>
+            <p id="fullName">Full Name</p>
+            <p id="crewRole">Crew Role</p>
+            <p id="crewSince">Crew since 20xx</p>
+            <p id="bio">User bio goes here...</p>
+            <button class="edit-btn">Edit Profile</button>
+            <div class="tooltip" id="editTooltip">Unavailable at this time. Site under construction.</div>
+        </section>
+
+        <section class="profile-grid">
+            <div class="profile-box" id="savedTips">
+                <h2>Saved Tips</h2>
+                <div class="tip-list"></div>
+            </div>
+
+            <div class="profile-box" id="savedNotes">
+                <h2>Saved Notes</h2>
+                <div class="note-list"></div>
+            </div>
+
+            <div class="profile-box" id="lastSubmitted">
+                <h2>Last Submitted</h2>
+                <div class="submission-list"></div>
+            </div>
+
+            <div class="profile-box" id="savedCities">
+                <h2>Saved City Details</h2>
+                <div class="city-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="ftr-container"></div>
+    </footer>
+
+
+
+</body>
+
+</html>

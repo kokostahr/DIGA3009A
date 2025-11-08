@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabin Clue</title>
+    <meta name="author" content="Star Nkosi">
+    <meta name="description" content="The landing page, for cabin clue!">
+
+    <!-- JAVA SCRIPT LINKING -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="homepage-dynamics/index.js" defer></script>
+    <script src="homepage-dynamics/main.js" defer></script>
+
+
+    <!--STYLES LINKKING-->
+    <link rel="stylesheet" href="homepage-styles/main.css" />
+    <link rel="stylesheet" href="homepage-styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="nav-container"></div>
+            <div id="searchbar-cta"></div>
+        </header>
+
+        <!--hawt rn-->
+        <div class="hot-container">
+            <section class="hot-right-now">
+                <h2>Hot Right Now</h2>
+                <div class="hot-cards">
+                    <div class="card" id="featuredCitiesCard">Featured Cities</div>
+                    <div class="card" id="featuredPostsCard">Featured Posts</div>
+                    <div class="card" id="featuredQuestionsCard">Featured Questions</div>
+                </div>
+            </section>
+
+            <!--hawt in your area-->
+            <section class="hot-in-your-area">
+                <h2>Hot In Your Area</h2>
+                <div class="area-cards" id="hotspotCards">
+                    <div class="card">Hotspots!</div>
+                    <div class="card">Featured Questions</div>
+                </div>
+            </section>
+        </div>
+
+        <!--carouselll-->
+        <section class="carousel-section">
+            <h3>Recent Questions & Tips</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">⤸</button>
+                <div class="carousel-scroll-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-card">“How do I stay hydrated on long-haul flights?”</div>
+                        <div class="carousel-card">“Best layover snacks in Doha?”</div>
+                        <div class="carousel-card">“Tips for surviving red-eye shifts?”</div>
+                        <div class="carousel-card">“Crew hacks for packing light?”</div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">⤹</button>
+            </div>
+
+            <div class="carousel-cta">
+                <div class="incentive-cta">
+                    <p>Have a question about aviation life?</p>
+                    <button class="join-btn">Join Cabin Clue!</button>
+                </div>
+                <div class="tip-inctive-cta">
+                    <p>Have a tip to share your experience?</p>
+                    <button class="submit-btn">Submit a Tip</button>
+                </div>
+            </div>
+        </section>
+
+        <!--weather forecast api-->
+        <aside class="weather-box">
+            <h4 id="weather-temp">Loading...</h4>
+            <p id="weather-desc">Please wait</p>
+            <img id="weather-icon" alt="Weather icon" />
+            <small>Live Weather Forecast</small>
+        </aside>
+
+
+
+        <footer>
+            <div id="ftr-container"></div>
+        </footer>>
+
+    </main>
+
+</body>
+
+</html>
