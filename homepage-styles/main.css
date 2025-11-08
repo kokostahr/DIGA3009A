@@ -170,6 +170,18 @@ a:hover {
     gap: 1rem;
 }
 
+.loginBtn {
+    background-color: var(--soft-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 1rem;
+}
+
 .logout-btn {
     background-color: var(--lavender-grey);
     color: var(--greyish-blue);

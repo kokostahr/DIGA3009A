@@ -11,6 +11,12 @@
     --font-ui: 'Nunito Sans', sans-serif;
 }
 
+.loginBtn,
+.logout-btn {
+    display: none;
+}
+
+
 label,
 button,
 input {

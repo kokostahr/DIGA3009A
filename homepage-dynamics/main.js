@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    //issues with switching between 'profile' and 'login' button :(
+    //issues with switching between 'profile' and 'login' button :( and moving throuh the navbar
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
     /**let's uhm, make the navbar and footer dynamic first */
     const navbarHTML = `
@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     </button>
 
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="faqs/about-page.html">About</a></li>
-                    <li><a href="faqs/faqs-page.html">FAQs</a></li>
-                    <li><a href="search-results/forum-search.html">Forum</a></li>
-                    <li><a href="faqs/contact-page.html">Contact</a></li>
+                    <li><a href="/DIGA3009A/index.html">Home</a></li>
+                    <li><a href="/DIGA3009A/faqs/about-page.html">About</a></li>
+                    <li><a href="/DIGA3009A/faqs/faqs-page.html">FAQs</a></li>
+                    <li><a href="/DIGA3009A/search-results/forum-search.html">Forum</a></li>
+                    <li><a href="/DIGA3009A/faqs/contact-page.html">Contact</a></li>
                 </ul>
                 <div class="nav-auth"></div>
 
@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (navAuth) {
         if (loggedInUser && loggedInUser.username) {
             navAuth.innerHTML = `
-               <a href="profile/profile-page.html" class="profile-link">
+               <a href="/DIGA3009A/profile/profile-page.html" class="profile-link">
                     <i class="fas fa-user"></i> ${loggedInUser.username}
                 </a>
                 <button class="logout-btn">Logout</button>
             `;
         } else {
             navAuth.innerHTML = `
-                <button class="login-btn" onclick="window.location.href='profile/login-page.html'">
+                <button class="loginBtn" onclick="window.location.href='/DIGA3009A/profile/login-page.html'">
                     Login
                 </button>
             `;
@@ -88,13 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerHTML = `
         <footer class="ftr">
             <ul class="footer-links">
-                <li> <a href="/faqs/about-page.html">About</a> </li>
-                <li> <a href="/faqs/faqs-page.html">FAQs</a> </li>
-                <li> <a href="/faqs/contact-page.html">Contact</a> </li>
+                <li> <a href="/DIGA3009A/faqs/about-page.html">About</a> </li>
+                <li> <a href="/DIGA3009A/faqs/faqs-page.html">FAQs</a> </li>
+                <li> <a href="/DIGA3009A/faqs/contact-page.html">Contact</a> </li>
             </ul>
             <ul class="social-icons">
-                <li> <a href="#">Instagram</a> </li>
-                <li> <a href="#">YouTube</a> </li>
+                <li> <a href="https://www.youtube.com/@Koko_stahp">YouTube</a> </li>
             </ul>
             <p>&copy; 2025 Cabin Clue ⋆｡ﾟ☁︎｡✈︎⋆｡ ﾟ☾ ﾟ｡⋆ Mine No Stealing</p>
         </footer >
