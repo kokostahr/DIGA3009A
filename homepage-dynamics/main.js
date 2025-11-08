@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (logoutBtn) {
         logoutBtn.addEventListener("click", () => {
             localStorage.removeItem("loggedInUser");
-            window.location.href = "/index.html";
+            window.location.href = "/DIGA3009/index.html";
         });
     }
 
