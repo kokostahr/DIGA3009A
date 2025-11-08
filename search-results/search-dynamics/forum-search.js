@@ -216,9 +216,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (submitBtn) {
         submitBtn.addEventListener("click", () => {
             if (loggedInUser && loggedInUser.username) {
-                window.location.href = "/profile/profile-page.html";
+                window.location.href = "profile/profile-page.html";
             } else {
-                window.location.href = "/profile/login-page.html";
+                window.location.href = "profile/login-page.html";
             }
         });
     }

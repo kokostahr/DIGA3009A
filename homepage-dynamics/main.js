@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     </button>
 
                 <ul class="nav-links">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/faqs/about-page.html">About</a></li>
-                    <li><a href="/faqs/faqs-page.html">FAQs</a></li>
-                    <li><a href="/search-results/forum-page.html">Forum</a></li>
-                    <li><a href="/faqs/contact-page.html"></i> Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="faqs/about-page.html">About</a></li>
+                    <li><a href="faqs/faqs-page.html">FAQs</a></li>
+                    <li><a href="search-results/forum-page.html">Forum</a></li>
+                    <li><a href="faqs/contact-page.html">Contact</a></li>
                 </ul>
                 <div class="nav-auth"></div>
 
@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (navAuth) {
         if (loggedInUser && loggedInUser.username) {
             navAuth.innerHTML = `
-               <a href="/profile/profile-page.html" class="profile-link">
+               <a href="profile/profile-page.html" class="profile-link">
                     <i class="fas fa-user"></i> ${loggedInUser.username}
                 </a>
                 <button class="logout-btn">Logout</button>
             `;
         } else {
             navAuth.innerHTML = `
-                <button class="login-btn" onclick="window.location.href='/profile/login-page.html'">
+                <button class="login-btn" onclick="window.location.href='profile/login-page.html'">
                     Login
                 </button>
             `;
